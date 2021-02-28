@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5496B8DE25D1426500D196B6 /* testApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5496B8CB25D1426200D196B6 /* testApp.swift */; };
-		5496B8DF25D1426500D196B6 /* testApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5496B8CB25D1426200D196B6 /* testApp.swift */; };
+		5448567C25EBA51E00AB53E8 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5448567B25EBA51E00AB53E8 /* Project.swift */; };
+		5448567D25EBA51E00AB53E8 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5448567B25EBA51E00AB53E8 /* Project.swift */; };
+		5448568125EBA6A700AB53E8 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5448568025EBA6A700AB53E8 /* ProjectView.swift */; };
+		5448568225EBA6A700AB53E8 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5448568025EBA6A700AB53E8 /* ProjectView.swift */; };
+		5448568925EBA80E00AB53E8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5448568825EBA80E00AB53E8 /* Utilities.swift */; };
+		5448568A25EBA80E00AB53E8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5448568825EBA80E00AB53E8 /* Utilities.swift */; };
+		5496B8DE25D1426500D196B6 /* NiftyTimeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5496B8CB25D1426200D196B6 /* NiftyTimeTracker.swift */; };
+		5496B8DF25D1426500D196B6 /* NiftyTimeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5496B8CB25D1426200D196B6 /* NiftyTimeTracker.swift */; };
 		5496B8E025D1426500D196B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5496B8CC25D1426200D196B6 /* ContentView.swift */; };
 		5496B8E125D1426500D196B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5496B8CC25D1426200D196B6 /* ContentView.swift */; };
 		5496B8E225D1426500D196B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5496B8CD25D1426500D196B6 /* Assets.xcassets */; };
@@ -16,12 +22,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5496B8CB25D1426200D196B6 /* testApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testApp.swift; sourceTree = "<group>"; };
+		5448567B25EBA51E00AB53E8 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		5448568025EBA6A700AB53E8 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
+		5448568825EBA80E00AB53E8 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		5496B8CB25D1426200D196B6 /* NiftyTimeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiftyTimeTracker.swift; sourceTree = "<group>"; };
 		5496B8CC25D1426200D196B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5496B8CD25D1426500D196B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5496B8D225D1426500D196B6 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5496B8D225D1426500D196B6 /* Nifty Time Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nifty Time Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5496B8D525D1426500D196B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5496B8DA25D1426500D196B6 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5496B8DA25D1426500D196B6 /* Nifty Time Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nifty Time Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5496B8DC25D1426500D196B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5496B8DD25D1426500D196B6 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,9 +66,12 @@
 		5496B8CA25D1426200D196B6 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				5496B8CB25D1426200D196B6 /* testApp.swift */,
+				5496B8CB25D1426200D196B6 /* NiftyTimeTracker.swift */,
 				5496B8CC25D1426200D196B6 /* ContentView.swift */,
 				5496B8CD25D1426500D196B6 /* Assets.xcassets */,
+				5448567B25EBA51E00AB53E8 /* Project.swift */,
+				5448568025EBA6A700AB53E8 /* ProjectView.swift */,
+				5448568825EBA80E00AB53E8 /* Utilities.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -67,8 +79,8 @@
 		5496B8D325D1426500D196B6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5496B8D225D1426500D196B6 /* test.app */,
-				5496B8DA25D1426500D196B6 /* test.app */,
+				5496B8D225D1426500D196B6 /* Nifty Time Tracker.app */,
+				5496B8DA25D1426500D196B6 /* Nifty Time Tracker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,9 +105,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5496B8D125D1426500D196B6 /* test (iOS) */ = {
+		5496B8D125D1426500D196B6 /* Nifty Time Tracker (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5496B8E625D1426500D196B6 /* Build configuration list for PBXNativeTarget "test (iOS)" */;
+			buildConfigurationList = 5496B8E625D1426500D196B6 /* Build configuration list for PBXNativeTarget "Nifty Time Tracker (iOS)" */;
 			buildPhases = (
 				5496B8CE25D1426500D196B6 /* Sources */,
 				5496B8CF25D1426500D196B6 /* Frameworks */,
@@ -105,14 +117,14 @@
 			);
 			dependencies = (
 			);
-			name = "test (iOS)";
+			name = "Nifty Time Tracker (iOS)";
 			productName = "test (iOS)";
-			productReference = 5496B8D225D1426500D196B6 /* test.app */;
+			productReference = 5496B8D225D1426500D196B6 /* Nifty Time Tracker.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5496B8D925D1426500D196B6 /* test (macOS) */ = {
+		5496B8D925D1426500D196B6 /* Nifty Time Tracker (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5496B8E925D1426500D196B6 /* Build configuration list for PBXNativeTarget "test (macOS)" */;
+			buildConfigurationList = 5496B8E925D1426500D196B6 /* Build configuration list for PBXNativeTarget "Nifty Time Tracker (macOS)" */;
 			buildPhases = (
 				5496B8D625D1426500D196B6 /* Sources */,
 				5496B8D725D1426500D196B6 /* Frameworks */,
@@ -122,9 +134,9 @@
 			);
 			dependencies = (
 			);
-			name = "test (macOS)";
+			name = "Nifty Time Tracker (macOS)";
 			productName = "test (macOS)";
-			productReference = 5496B8DA25D1426500D196B6 /* test.app */;
+			productReference = 5496B8DA25D1426500D196B6 /* Nifty Time Tracker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -144,7 +156,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5496B8C925D1426200D196B6 /* Build configuration list for PBXProject "test" */;
+			buildConfigurationList = 5496B8C925D1426200D196B6 /* Build configuration list for PBXProject "Nifty Time Tracker" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -157,8 +169,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5496B8D125D1426500D196B6 /* test (iOS) */,
-				5496B8D925D1426500D196B6 /* test (macOS) */,
+				5496B8D125D1426500D196B6 /* Nifty Time Tracker (iOS) */,
+				5496B8D925D1426500D196B6 /* Nifty Time Tracker (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -188,7 +200,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5496B8E025D1426500D196B6 /* ContentView.swift in Sources */,
-				5496B8DE25D1426500D196B6 /* testApp.swift in Sources */,
+				5448567C25EBA51E00AB53E8 /* Project.swift in Sources */,
+				5448568125EBA6A700AB53E8 /* ProjectView.swift in Sources */,
+				5448568925EBA80E00AB53E8 /* Utilities.swift in Sources */,
+				5496B8DE25D1426500D196B6 /* NiftyTimeTracker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +212,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5496B8E125D1426500D196B6 /* ContentView.swift in Sources */,
-				5496B8DF25D1426500D196B6 /* testApp.swift in Sources */,
+				5448567D25EBA51E00AB53E8 /* Project.swift in Sources */,
+				5448568225EBA6A700AB53E8 /* ProjectView.swift in Sources */,
+				5448568A25EBA80E00AB53E8 /* Utilities.swift in Sources */,
+				5496B8DF25D1426500D196B6 /* NiftyTimeTracker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +273,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -308,6 +328,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -329,8 +351,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.niftytreestudios.test;
-				PRODUCT_NAME = test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.niftytreestudios.NiftyTimeTracker;
+				PRODUCT_NAME = "Nifty Time Tracker";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -351,8 +373,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.niftytreestudios.test;
-				PRODUCT_NAME = test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.niftytreestudios.NiftyTimeTracker;
+				PRODUCT_NAME = "Nifty Time Tracker";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -377,8 +399,8 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.niftytreestudios.test;
-				PRODUCT_NAME = test;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niftytreestudios.Nifty-Time-Tracker";
+				PRODUCT_NAME = "Nifty Time Tracker";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -401,8 +423,8 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.niftytreestudios.test;
-				PRODUCT_NAME = test;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niftytreestudios.Nifty-Time-Tracker";
+				PRODUCT_NAME = "Nifty Time Tracker";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -411,7 +433,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5496B8C925D1426200D196B6 /* Build configuration list for PBXProject "test" */ = {
+		5496B8C925D1426200D196B6 /* Build configuration list for PBXProject "Nifty Time Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5496B8E425D1426500D196B6 /* Debug */,
@@ -420,7 +442,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5496B8E625D1426500D196B6 /* Build configuration list for PBXNativeTarget "test (iOS)" */ = {
+		5496B8E625D1426500D196B6 /* Build configuration list for PBXNativeTarget "Nifty Time Tracker (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5496B8E725D1426500D196B6 /* Debug */,
@@ -429,7 +451,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5496B8E925D1426500D196B6 /* Build configuration list for PBXNativeTarget "test (macOS)" */ = {
+		5496B8E925D1426500D196B6 /* Build configuration list for PBXNativeTarget "Nifty Time Tracker (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5496B8EA25D1426500D196B6 /* Debug */,
