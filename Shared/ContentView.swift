@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    var projects: [Project] = [Project(name: "First", time: 0),
+                               Project(name: "Second", time: 231441)]
     
     var body: some View {
         VStack {
-            ProjectView(project: Project(name: "First", time: 0))
-            ProjectView(project: Project(name: "Second", time: 231441))
+            ForEach(projects, id: \.name) { project in
+                ProjectView(project: project)
+            }
         }.padding()
     }
 }
