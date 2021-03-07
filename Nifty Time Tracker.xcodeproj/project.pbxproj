@@ -17,6 +17,8 @@
 		5496B8E125D1426500D196B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5496B8CC25D1426200D196B6 /* ContentView.swift */; };
 		5496B8E225D1426500D196B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5496B8CD25D1426500D196B6 /* Assets.xcassets */; };
 		5496B8E325D1426500D196B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5496B8CD25D1426500D196B6 /* Assets.xcassets */; };
+		54F6E88425F4CCC800D991C3 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F6E88325F4CCC800D991C3 /* Utilities.swift */; };
+		54F6E88525F4CCC800D991C3 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F6E88325F4CCC800D991C3 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,7 @@
 		5496B8DA25D1426500D196B6 /* Nifty Time Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nifty Time Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5496B8DC25D1426500D196B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5496B8DD25D1426500D196B6 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		54F6E88325F4CCC800D991C3 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,7 @@
 				5496B8CD25D1426500D196B6 /* Assets.xcassets */,
 				5448567B25EBA51E00AB53E8 /* Project.swift */,
 				5448568025EBA6A700AB53E8 /* ProjectView.swift */,
+				54F6E88325F4CCC800D991C3 /* Utilities.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -198,6 +202,7 @@
 				5496B8E025D1426500D196B6 /* ContentView.swift in Sources */,
 				5448567C25EBA51E00AB53E8 /* Project.swift in Sources */,
 				5448568125EBA6A700AB53E8 /* ProjectView.swift in Sources */,
+				54F6E88425F4CCC800D991C3 /* Utilities.swift in Sources */,
 				5496B8DE25D1426500D196B6 /* NiftyTimeTracker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +214,7 @@
 				5496B8E125D1426500D196B6 /* ContentView.swift in Sources */,
 				5448567D25EBA51E00AB53E8 /* Project.swift in Sources */,
 				5448568225EBA6A700AB53E8 /* ProjectView.swift in Sources */,
+				54F6E88525F4CCC800D991C3 /* Utilities.swift in Sources */,
 				5496B8DF25D1426500D196B6 /* NiftyTimeTracker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
