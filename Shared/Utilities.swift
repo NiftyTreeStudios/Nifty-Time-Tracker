@@ -9,17 +9,15 @@ import Foundation
 
 /// Returns a tuple of hours, minutes, seconds from seconds.
 /// - Parameters:
-///     - time: Int representing seconds
+///     - seconds: Int representing seconds
 /// - Returns: Tuple (hours, minutes, seconds)
-///
 private func secondsToHoursMinutesSeconds(seconds: Int) -> (Int, Int, Int) {
     return (seconds / 3600, (seconds % 3600) / 60, (seconds % 3600) % 60)
 }
 
 /// Formats an given int into HH:MM:SS format.
 /// - Parameters:
-///     - time: Int representing seconds
-///
+///     - seconds: Int representing seconds
 func formattedTime(seconds: Int) -> String {
     let (hours, minutes, seconds) = secondsToHoursMinutesSeconds(seconds: seconds)
     let hoursString = hours
