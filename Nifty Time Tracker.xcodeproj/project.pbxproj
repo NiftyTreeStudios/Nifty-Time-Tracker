@@ -11,8 +11,6 @@
 		5448567D25EBA51E00AB53E8 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5448567B25EBA51E00AB53E8 /* Project.swift */; };
 		5448568125EBA6A700AB53E8 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5448568025EBA6A700AB53E8 /* ProjectView.swift */; };
 		5448568225EBA6A700AB53E8 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5448568025EBA6A700AB53E8 /* ProjectView.swift */; };
-		5448568925EBA80E00AB53E8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5448568825EBA80E00AB53E8 /* Utilities.swift */; };
-		5448568A25EBA80E00AB53E8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5448568825EBA80E00AB53E8 /* Utilities.swift */; };
 		5496B8DE25D1426500D196B6 /* NiftyTimeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5496B8CB25D1426200D196B6 /* NiftyTimeTracker.swift */; };
 		5496B8DF25D1426500D196B6 /* NiftyTimeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5496B8CB25D1426200D196B6 /* NiftyTimeTracker.swift */; };
 		5496B8E025D1426500D196B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5496B8CC25D1426200D196B6 /* ContentView.swift */; };
@@ -24,7 +22,6 @@
 /* Begin PBXFileReference section */
 		5448567B25EBA51E00AB53E8 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		5448568025EBA6A700AB53E8 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
-		5448568825EBA80E00AB53E8 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		5496B8CB25D1426200D196B6 /* NiftyTimeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiftyTimeTracker.swift; sourceTree = "<group>"; };
 		5496B8CC25D1426200D196B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5496B8CD25D1426500D196B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,7 +68,6 @@
 				5496B8CD25D1426500D196B6 /* Assets.xcassets */,
 				5448567B25EBA51E00AB53E8 /* Project.swift */,
 				5448568025EBA6A700AB53E8 /* ProjectView.swift */,
-				5448568825EBA80E00AB53E8 /* Utilities.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -202,7 +198,6 @@
 				5496B8E025D1426500D196B6 /* ContentView.swift in Sources */,
 				5448567C25EBA51E00AB53E8 /* Project.swift in Sources */,
 				5448568125EBA6A700AB53E8 /* ProjectView.swift in Sources */,
-				5448568925EBA80E00AB53E8 /* Utilities.swift in Sources */,
 				5496B8DE25D1426500D196B6 /* NiftyTimeTracker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,7 +209,6 @@
 				5496B8E125D1426500D196B6 /* ContentView.swift in Sources */,
 				5448567D25EBA51E00AB53E8 /* Project.swift in Sources */,
 				5448568225EBA6A700AB53E8 /* ProjectView.swift in Sources */,
-				5448568A25EBA80E00AB53E8 /* Utilities.swift in Sources */,
 				5496B8DF25D1426500D196B6 /* NiftyTimeTracker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
