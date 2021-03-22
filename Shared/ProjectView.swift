@@ -15,6 +15,8 @@ struct ProjectView: View {
     @State var seconds: Int = 0
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
+    @Binding var editMode: Bool
+    
     var body: some View {
         HStack {
             Text(project.name)
@@ -39,12 +41,20 @@ struct ProjectView: View {
                 }
             } label: {
                 if timerStarted {
-                    Text("Stop")
+                    Image(systemName: "pause")
                 } else {
-                    Text("Start")
+                    Image(systemName: "play")
                 }
+            }.padding()
+            .disabled(editMode)
+            if editMode {
+                Button(action: {
+                    guard let index = projects.firstIndex(of: project) else { return }
+                    projects.remove(at: index)
+                }, label: {
+                    Image(systemName: "trash")
+                })
             }
-
         }
     }
 }
