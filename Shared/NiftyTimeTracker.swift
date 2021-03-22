@@ -8,10 +8,21 @@
 import SwiftUI
 
 @main
-struct testApp: App {
+struct NiftyTimeTracker: App {
+    
     var body: some Scene {
+        #if os(macOS)
         WindowGroup {
             ContentView()
         }
+        #elseif os(iOS)
+        WindowGroup {
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                iPadContentView()
+            } else {
+                iOSContentView()
+            }
+        }
+        #endif
     }
 }
