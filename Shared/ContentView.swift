@@ -8,11 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    @State var projects: [Project] = []
+    
+    @State var projectName: String = ""
     
     var body: some View {
         VStack {
-            ProjectView(project: Project(name: "First", time: 0))
-            ProjectView(project: Project(name: "Second", time: 231441))
+            HStack {
+                TextField("Enter project name", text: $projectName)
+                Button {
+                    projects.append(Project(name: projectName, time: 0))
+                    projects.sort { $0.name < $1.name }
+                    projectName = ""
+                    saveProjects(projects)
+                } label: {
+                    Text("Save")
+                }
+
+            }
+            ForEach(projects, id: \.name) { project in
+                ProjectView(project: project, projects: $projects)
+            }
         }.padding()
+        .onAppear {
+            projects = loadProjects()
+        }
     }
 }
